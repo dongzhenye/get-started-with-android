@@ -34,8 +34,15 @@ public class MainActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        // Handle search action button
+        if (id == R.id.action_search) {
+            openSearch();
+            return true;
+        }
+
+        // Handle Settings action button
         if (id == R.id.action_settings) {
+            openSettings();
             return true;
         }
 
