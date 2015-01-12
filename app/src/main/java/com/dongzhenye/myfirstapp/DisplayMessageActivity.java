@@ -1,9 +1,8 @@
 package com.dongzhenye.myfirstapp;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
+import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -28,7 +27,8 @@ public class DisplayMessageActivity extends ActionBarActivity {
 
         // Enable the app icon as the Up button.
         // The following command requires minSdkVersion 11 or higher.
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        // Bug exists below.
+        // getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
